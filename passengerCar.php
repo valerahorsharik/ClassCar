@@ -14,5 +14,9 @@ class PassengerCar extends Car{
 		$passenger->state ="in car";
 		unset($this->passengers[$passenger]);
 	}
-	
+	public function getPassengers(){
+		foreach($this->passengers as $show){
+			echo $show->getId() . "<br/>";
+		}
+	}
 }
