@@ -9,11 +9,19 @@ class PassengerCar extends Car{
 	}
 	public function getOut(passenger $passenger){
 		$passenger->state ="Out of car";
-		unset($this->passengers[$passenger]);
-	}
+		foreach($this->passengers as $out=>$value){
+			 if ($this->passengers[$out]->getId() == $passenger->getId()){
+				unset($this->passengers[$out]); 
+			 } 
+		}  
+			
+	} 
+		
+	
 	public function getPassengers(){
-		foreach($this->passengers as $show){
+		
+		 foreach($this->passengers as $show){
 			echo $show->getId() . "<br/>";
-		}
+		} 
 	}
 }
