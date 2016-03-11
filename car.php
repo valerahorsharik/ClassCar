@@ -10,17 +10,17 @@ class Car
         return $this->color;
     }
 		
-    public	function getPrice()
+    public function getPrice()
     {
         return $this->price;
     }
 		
-    public	function getMaxSpeed()
+    public function getMaxSpeed()
     {
         return $this->max_speed;
     }
 
-    public	function __construct($color,$price,$max_speed)
+    public function __construct($color,$price,$max_speed)
     {
         $this->color = $color;
         $this->price = $price;
