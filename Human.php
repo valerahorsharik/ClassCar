@@ -1,8 +1,22 @@
 <?php
-class Human extends Creature
+class Human extends Creature implements PassegerInterface
 {
-    public function show()
-		{
-        echo "Hello world!";
-		}
+    public $state;
+    private $id;
+		
+		
+		public  function __construct()
+    {
+        $this->id = uniqid();
+    }
+		
+    public function getState()
+    {
+        return $this->state;
+    }
+		
+    public function getId()
+    {
+        return $this->id;
+    }
 }

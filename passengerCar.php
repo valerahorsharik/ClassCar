@@ -6,13 +6,13 @@ class PassengerCar extends Car
 
     private $passengers = array();
 		
-    public function getIn(passenger $passenger)
+    public function getIn(PassegerInterface $passenger)
     {
         $passenger->state = IN;
         $this->passengers[] = $passenger;
     }
 		
-    public function getOut(passenger $passenger)
+    public function getOut(PassegerInterface $passenger)
     {
         $passenger->state = OUT;
         foreach ($this->passengers as $out=>$value) {
@@ -25,7 +25,7 @@ class PassengerCar extends Car
     public function getPassengers()
     {
         foreach ($this->passengers as $show) {
-            echo $show->getId();
+            echo $show->getId() ;
         } 
     }
 }

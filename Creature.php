@@ -1,5 +1,5 @@
 <?php
-abstract class Creature implements BecomePassenger
+abstract class Creature 
 {
     protected $BirthdayDate;
 		
