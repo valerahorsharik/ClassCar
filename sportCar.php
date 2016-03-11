@@ -20,6 +20,6 @@ class SportCar extends Car
 		
     public function getSpoiler()
     {
-        return ($this->spoiler?"Spoiler installed":"Spoiler is not set");
+        return settype($this->spoiler,bool);
     }
 }
