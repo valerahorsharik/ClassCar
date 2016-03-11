@@ -8,6 +8,7 @@ class PassengerCar extends Car
         $passenger->state = "In car";
         $this->passengers[] = $passenger;
     }
+		
     public function getOut(passenger $passenger)
     {
         $passenger->state = "Out of car";
@@ -17,6 +18,7 @@ class PassengerCar extends Car
             } 
         }  
     } 
+		
     public function getPassengers()
     {
         foreach ($this->passengers as $show) {
