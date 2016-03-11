@@ -1,5 +1,5 @@
 <?php
-
+include_once "PassengerCarInterface.php";
 include_once "Car.php";
 include_once "PassengerCar.php";
 include_once "SportCar.php";
