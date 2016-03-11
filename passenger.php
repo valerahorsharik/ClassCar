@@ -4,7 +4,7 @@ class Passenger
     public $state;
     private $id;
 		
-    public function __construct()
+    public  function __construct()
     {
         $this->id = uniqid();
     }
