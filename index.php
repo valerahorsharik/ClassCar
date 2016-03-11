@@ -22,7 +22,7 @@ echo $passCar->getPassengers();
 $passCar->getOut($Illya);
 print "Echo all passengers after delete 1 of them<br/>";
 echo $passCar->getPassengers();
-$Volodya->getState();
+echo $Volodya->getState();
 echo $Volodya->getId() . "<br/>";
 echo $Illya->getId() . "<br/>";
 

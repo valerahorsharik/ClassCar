@@ -1,5 +1,5 @@
 <?php
-class PassengerCar extends Car
+class PassengerCar extends Car implements PassengerCarInterface
 {
     const IN = "In car" ;
     const OUT = "Out of car" ;
@@ -8,13 +8,13 @@ class PassengerCar extends Car
 		
     public function getIn(PassegerInterface $passenger)
     {
-        $passenger->state = IN;
+        $passenger->state = self::IN;
         $this->passengers[] = $passenger;
     }
 		
     public function getOut(PassegerInterface $passenger)
     {
-        $passenger->state = OUT;
+        $passenger->state = self::OUT;
         foreach ($this->passengers as $out=>$value) {
             if ($value->getId() == $passenger->getId()) {
                 unset($this->passengers[$out]); 
