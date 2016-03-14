@@ -1,6 +1,5 @@
 <?php
 namespace cars;
-namespace firsttask;
 interface PassegerInterface
 {
     public function getState();

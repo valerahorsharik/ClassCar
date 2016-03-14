@@ -2,7 +2,7 @@
 namespace cars;
 interface PassengerCarInterface
 {
-    public function getIn();
-    public function getOut();
+    public function getIn(PassegerInterface $passenger);
+    public function getOut(PassegerInterface $passenger);
     public function getPassengers();
 }
