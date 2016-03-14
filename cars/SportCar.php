@@ -1,4 +1,5 @@
 <?php
+namespace cars;
 class SportCar extends Car
 {
     private $spoiler;

@@ -1,4 +1,5 @@
 <?php
+namespace cars;
 abstract class Creature 
 {
     protected $BirthdayDate;

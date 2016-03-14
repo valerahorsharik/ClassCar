@@ -1,4 +1,5 @@
 <?php
+namespace cars;
 class PassengerCar extends Car implements PassengerCarInterface
 {
     const IN = "In car" ;

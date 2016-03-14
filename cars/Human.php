@@ -1,4 +1,5 @@
 <?php
+namespace cars;
 class Human extends Creature implements PassegerInterface
 {
     public $state;

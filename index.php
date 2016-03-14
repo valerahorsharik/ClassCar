@@ -1,16 +1,20 @@
 <?php
-include_once "PassengerCarInterface.php";
+/* include_once "PassengerCarInterface.php";
 include_once "Car.php";
 include_once "PassengerCar.php";
 include_once "SportCar.php";
 include_once "PassengerInterface.php";
 include_once "Creature.php";
-include_once "Human.php";
+include_once "Human.php"; */
 
-$passCar = new PassengerCar("Yellow",1200,130);
+function __autoload($class_name) {
+	  $path = str_replace('\\', DIRECTORY_SEPARATOR, $class_name);
+    include_once ("$path.php");
+}
+$passCar = new cars\PassengerCar("Yellow",1200,130);
 
-$Volodya = new Human(25);
-$Illya = new Human(55);
+$Volodya = new cars\Human(25);
+$Illya = new cars\Human(55);
 
 
 $passCar->getIn($Volodya);

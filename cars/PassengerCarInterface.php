@@ -1,4 +1,5 @@
 <?php
+namespace cars;
 interface PassengerCarInterface
 {
     public function getIn();
